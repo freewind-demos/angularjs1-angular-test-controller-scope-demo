@@ -1,12 +1,7 @@
-AngularJS1 Test "angular-mocks" Inject Demo
+AngularJS1 Test Test Controller Scope Demo
 ======================================
 
-注意：
-
-1. `karma.conf.js`可以使用`karma init`生成
-1. `karma.conf.js`中`files`要包括所有的文件
-1. `filterSpec.js`中`beforeEach`是如何初始化的
-
+需要inject进来需要测试的controller，以及rootScope来为该controller生成一个scope
 
 ```
 npm install

@@ -1,7 +1,9 @@
 const app = angular.module('app', []);
-app.filter('upper', () => {
-  return (input, addBang) => {
-    const upper = (input || "").toUpperCase();
-    return addBang ? upper + '!!!' : upper
-  }
+app.controller('HelloController', function ($scope) {
+  $scope.yourName = "AngularJs1";
+  $scope.updatedName = '';
+  $scope.$watch(() => $scope.yourName, (value) => {
+    console.log('Changed: ', value);
+    $scope.updatedName = value;
+  })
 });

@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "demo": "open index.html",
     "test": "karma start"
   },
   "dependencies": {

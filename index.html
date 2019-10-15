@@ -1,18 +1,13 @@
 <html>
 <head>
-  <script src="./node_modules/lodash/lodash.js"></script>
-  <script src="./node_modules/angular/angular.js"></script>
-  <script src="./app.js"></script>
+    <script src="./node_modules/lodash/lodash.js"></script>
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./app.js"></script>
 </head>
 <body>
-<div ng-app="app">
-  <input type="text" ng-model="yourName" placeholder="type your name here"/>
-  <hr>
-  <ul>
-    <li>Hello, {{yourName}}</li>
-    <li>upper: Hello, {{yourName | upper}}</li>
-    <li>upper+bang: Hello, {{yourName | upper:true}}</li>
-  </ul>
+<div ng-app="app" ng-controller="HelloController">
+    <input type="text" ng-model="yourName"/>
+    <div>Your name: {{yourName}}</div>
 </div>
 </body>
 </html>
