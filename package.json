@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "demo": "open index.html",
+    "start": "open index.html",
     "test": "karma start"
   },
   "dependencies": {
